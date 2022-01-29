@@ -1,11 +1,11 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex, imagesSync
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
-let images = ['Fumos/1 (1).jpg', 'Fumos/1 (2).jpg', 'Fumos/1 (3).jpg',]
+let images = ['Fumos/1 (1).jpg', 'Fumos/1 (2).jpg', 'Fumos/1 (3).jpg','Fumos/1 (4).jpg','Fumos/1 (5).jpg','Fumos/1 (6).jpg','Fumos/1 (7).jpg','Fumos/1 (8).jpg','Fumos/1 (9).jpg','Fumos/1 (10).jpg','Fumos/1 (11).jpg','Fumos/1 (12).jpg','Fumos/1 (13).jpg','Fumos/1 (14).jpg','Fumos/1 (15).jpg','Fumos/1 (16).jpg','Fumos/1 (18).jpg','Fumos/1 (19).jpg','Fumos/1 (20).jpg','Fumos/1 (21).jpg','Fumos/1 (22).jpg','Fumos/1 (23).jpg','Fumos/1 (24).jpg','Fumos/1 (25).jpg','Fumos/1 (26).jpg','Fumos/1 (27).jpg','Fumos/1 (28).jpg','Fumos/1 (29).jpg','Fumos/1 (30).jpg','Fumos/1 (31).jpg','Fumos/1 (32).jpg','Fumos/1 (33).jpg','Fumos/1 (34).jpg',]
 let index = 0
 
 function buildImage() {
@@ -104,7 +104,7 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    image: 'Fumos/1 (1).jpg',
+    question: '1',
     answers: [
       { text: 'Sakuya', correct: true   },
       { text: '5000', correct: false },
@@ -113,7 +113,7 @@ const questions = [
     ]
   },
 {
-  question: 'What is 2 + 2',
+  question: '2',
   answers: [
     { text: 'Joe Biden', correct: true   },
     { text: '22', correct: false },
@@ -122,13 +122,310 @@ const questions = [
   ]
 },
 {
-  question: 'What is 2 + 2',
+  question: '3',
   answers: [
     { text: '4', correct: true   },
     { text: '22', correct: false },
     { text: '44', correct: false },
     { text: '69', correct: false }
   ]
+},
+{
+  question: '4',
+  answers: [
+    { text: 'Sakuya', correct: true   },
+    { text: '5000', correct: false },
+    { text: '44', correct: false },
+    { text: '69', correct: false }
+  ]
+},
+{
+question: '5',
+answers: [
+  { text: 'Joe Biden', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '6',
+answers: [
+  { text: '4', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+  question: '7',
+  answers: [
+    { text: 'Sakuya', correct: true   },
+    { text: '5000', correct: false },
+    { text: '44', correct: false },
+    { text: '69', correct: false }
+  ]
+},
+{
+question: '8',
+answers: [
+  { text: 'Joe Biden', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '9',
+answers: [
+  { text: '4', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+  question: '1',
+  answers: [
+    { text: 'Sakuya', correct: true   },
+    { text: '5000', correct: false },
+    { text: '44', correct: false },
+    { text: '69', correct: false }
+  ]
+},
+{
+question: '2',
+answers: [
+  { text: 'Joe Biden', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '3',
+answers: [
+  { text: '4', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+  question: '4',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '5',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '6',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+  question: '7',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '8',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '9',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+  question: '10',
+  answers: [
+    { text: 'Sakuya', correct: true   },
+    { text: '5000', correct: false },
+    { text: '44', correct: false },
+    { text: '69', correct: false }
+  ]
+},
+{
+question: '11',
+answers: [
+  { text: 'Joe Biden', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '12',
+answers: [
+  { text: '4', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+  question: '13',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '14',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '15',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+  question: '16',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '17',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '18',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+  question: '19',
+  answers: [
+    { text: 'Sakuya', correct: true   },
+    { text: '5000', correct: false },
+    { text: '44', correct: false },
+    { text: '69', correct: false }
+  ]
+},
+{
+question: '20',
+answers: [
+  { text: 'Joe Biden', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '21',
+answers: [
+  { text: '4', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+  question: '22',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '23',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '24',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+  question: '25',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '26',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '27',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
 }
 ]
 
