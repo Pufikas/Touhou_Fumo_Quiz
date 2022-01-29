@@ -21,8 +21,6 @@ function changeImage() {
   img.src = images[index]
 }
 
-
-
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
@@ -38,7 +36,7 @@ nextButton.addEventListener('click', () => {
 function startGame() {
 console.log('Started')
 startButton.classList.add('hide')
-shuffledQuestions = questions.sort(() => Math.random() - .5)
+shuffledQuestions = questions,images.sort(() => Math.random() - .5)
 currentQuestionIndex = 0
 questionContainerElement.classList.remove('hide')
 setNextQuestion()
@@ -108,7 +106,7 @@ const questions = [
   {
     image: 'Fumos/1 (1).jpg',
     answers: [
-      { text: '4', correct: true   },
+      { text: 'Sakuya', correct: true   },
       { text: '5000', correct: false },
       { text: '44', correct: false },
       { text: '69', correct: false }
@@ -117,7 +115,7 @@ const questions = [
 {
   question: 'What is 2 + 2',
   answers: [
-    { text: '4', correct: true   },
+    { text: 'Joe Biden', correct: true   },
     { text: '22', correct: false },
     { text: '44', correct: false },
     { text: '69', correct: false }
