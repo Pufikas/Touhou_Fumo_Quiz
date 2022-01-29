@@ -5,13 +5,34 @@ let shuffledQuestions, currentQuestionIndex
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+let images = ['Fumos/1 (1).jpg', 'Fumos/1 (2).jpg', 'Fumos/1 (3).jpg',]
+let index = 0
+
+function buildImage() {
+  let img = document.createElement('img')
+  img.src = images[index]
+  document.getElementById('question-container').appendChild(img)
+}
+
+function changeImage() {
+  let img = document.getElementById('question-container').getElementsByTagName('img')[0]
+  index++
+  index = index % images.length
+  img.src = images[index]
+}
+
 
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
+  changeImage()
   setNextQuestion()
 }) 
+
+
+
+
 
 
 function startGame() {
@@ -80,12 +101,15 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
+
+
+
 const questions = [
   {
-    question: 'What is 2 + 2',
+    image: 'Fumos/1 (1).jpg',
     answers: [
       { text: '4', correct: true   },
-      { text: '22', correct: false },
+      { text: '5000', correct: false },
       { text: '44', correct: false },
       { text: '69', correct: false }
     ]
