@@ -36,7 +36,7 @@ nextButton.addEventListener('click', () => {
 function startGame() {
 console.log('Started')
 startButton.classList.add('hide')
-shuffledQuestions = questions.sort(() => Math.random() - .5)
+shuffledQuestions = questions.sort(() => +1 )
 currentQuestionIndex = 0
 questionContainerElement.classList.remove('hide')
 setNextQuestion()
@@ -44,7 +44,7 @@ setNextQuestion()
 
 function setNextQuestion() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex, images])
+  showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
@@ -77,7 +77,7 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+  if (currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
 } else {
   startButton.innerText = 'Restart'
@@ -116,8 +116,8 @@ const questions = [
   question: '2',
   answers: [
     { text: 'Joe Biden', correct: false   },
-    { text: 'Hakurei Reimu', correct: true },
-    { text: '44', correct: false },
+    { text: 'Hakurei Reimu', correct: false },
+    { text: 'Remilia Scarlet', correct: true },
     { text: '69', correct: false }
   ]
 },
@@ -142,7 +142,7 @@ const questions = [
 {
 question: '5',
 answers: [
-  { text: 'Joe Biden', correct: true   },
+  { text: 'Flandre Scarlet', correct: true   },
   { text: '22', correct: false },
   { text: '44', correct: false },
   { text: '69', correct: false }
