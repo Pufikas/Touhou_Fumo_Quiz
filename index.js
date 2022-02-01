@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
-let shuffledQuestions, currentQuestionIndex, imagesSync
+let shuffledQuestions, currentQuestionIndex
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
@@ -17,7 +17,7 @@ function buildImage() {
 function changeImage() {
   let img = document.getElementById('question-container').getElementsByTagName('img')[0]
   index++
-  index = index % images.length
+  Imageindex = index % images.length
   img.src = images[index]
 }
 
@@ -36,7 +36,7 @@ nextButton.addEventListener('click', () => {
 function startGame() {
 console.log('Started')
 startButton.classList.add('hide')
-shuffledQuestions = questions,images.sort(() => Math.random() - .5)
+shuffledQuestions = questions.sort(() => Math.random() - .5)
 currentQuestionIndex = 0
 questionContainerElement.classList.remove('hide')
 setNextQuestion()
@@ -44,7 +44,7 @@ setNextQuestion()
 
 function setNextQuestion() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  showQuestion(shuffledQuestions[currentQuestionIndex, images])
 }
 
 function showQuestion(question) {
@@ -106,7 +106,7 @@ const questions = [
   {
     question: '1',
     answers: [
-      { text: 'Sakuya', correct: true   },
+      { text: 'Izayoi Sakuya', correct: true   },
       { text: '5000', correct: false },
       { text: '44', correct: false },
       { text: '69', correct: false }
@@ -115,8 +115,8 @@ const questions = [
 {
   question: '2',
   answers: [
-    { text: 'Joe Biden', correct: true   },
-    { text: '22', correct: false },
+    { text: 'Joe Biden', correct: false   },
+    { text: 'Hakurei Reimu', correct: true },
     { text: '44', correct: false },
     { text: '69', correct: false }
   ]
@@ -124,10 +124,10 @@ const questions = [
 {
   question: '3',
   answers: [
-    { text: '4', correct: true   },
+    { text: '4', correct: false   },
     { text: '22', correct: false },
     { text: '44', correct: false },
-    { text: '69', correct: false }
+    { text: 'Patchouli Knowledge', correct: true }
   ]
 },
 {
