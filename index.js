@@ -42,6 +42,15 @@ questionContainerElement.classList.remove('hide')
 setNextQuestion()
 }
 
+window.onkeydown = function(event){
+  if(event.keyCode === 32) {
+      event.preventDefault();
+      document.querySelector('button').setNextQuestion(); //This will trigger a click on the first <a> element.
+  }
+};
+
+
+
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -101,7 +110,6 @@ function clearStatusClass(element) {
 
 
 
-
 const questions = [
   {
     question: '1',
@@ -124,9 +132,9 @@ const questions = [
 {
   question: '3',
   answers: [
-    { text: '4', correct: false   },
-    { text: '22', correct: false },
-    { text: '44', correct: false },
+    { text: 'Patchouli Knowledge', correct: false   },
+    { text: 'Patchouli Knowledge', correct: false },
+    { text: 'Patchouli Knowledge', correct: false },
     { text: 'Patchouli Knowledge', correct: true }
   ]
 },
@@ -182,87 +190,6 @@ answers: [
   { text: '22', correct: false },
   { text: '44', correct: false },
   { text: '69', correct: false }
-]
-},
-{
-  question: '1',
-  answers: [
-    { text: 'Sakuya', correct: true   },
-    { text: '5000', correct: false },
-    { text: '44', correct: false },
-    { text: '69', correct: false }
-  ]
-},
-{
-question: '2',
-answers: [
-  { text: 'Joe Biden', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
-]
-},
-{
-question: '3',
-answers: [
-  { text: '4', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
-]
-},
-{
-  question: '4',
-answers: [
-  { text: 'Sakuya', correct: true   },
-  { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
-]
-},
-{
-question: '5',
-answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
-]
-},
-{
-question: '6',
-answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
-]
-},
-{
-  question: '7',
-answers: [
-  { text: 'Sakuya', correct: true   },
-  { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
-]
-},
-{
-question: '8',
-answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
-]
-},
-{
-question: '9',
-answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
 ]
 },
 {
@@ -426,6 +353,58 @@ answers: [
 { text: '44', correct: false },
 { text: '69', correct: false }
 ]
-}
+},
+{
+  question: '28',
+  answers: [
+    { text: 'Sakuya', correct: true   },
+    { text: '5000', correct: false },
+    { text: '44', correct: false },
+    { text: '69', correct: false }
+  ]
+},
+{
+question: '29',
+answers: [
+  { text: 'Joe Biden', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
 ]
-
+},
+{
+question: '30',
+answers: [
+  { text: '4', correct: true   },
+  { text: '22', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+  question: '31',
+answers: [
+  { text: 'Sakuya', correct: true   },
+  { text: '5000', correct: false },
+  { text: '44', correct: false },
+  { text: '69', correct: false }
+]
+},
+{
+question: '32',
+answers: [
+{ text: 'Joe Biden', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+},
+{
+question: '33',
+answers: [
+{ text: '4', correct: true   },
+{ text: '22', correct: false },
+{ text: '44', correct: false },
+{ text: '69', correct: false }
+]
+}]
