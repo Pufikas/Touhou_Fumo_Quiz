@@ -115,36 +115,36 @@ const questions = [
     question: '1',
     answers: [
       { text: 'Izayoi Sakuya', correct: true   },
-      { text: '5000', correct: false },
-      { text: '44', correct: false },
-      { text: '69', correct: false }
+      { text: 'Cirno', correct: false },
+      { text: 'Fujiwara no Mokou', correct: false },
+      { text: 'Moriya Suwako', correct: false }
     ]
   },
 {
   question: '2',
   answers: [
-    { text: 'Joe Biden', correct: false   },
+    { text: 'Yorigami Shion', correct: false   },
     { text: 'Hakurei Reimu', correct: false },
     { text: 'Remilia Scarlet', correct: true },
-    { text: '69', correct: false }
+    { text: 'Flandre Scarlet', correct: false }
   ]
 },
 {
   question: '3',
   answers: [
-    { text: 'Patchouli Knowledge', correct: false   },
-    { text: 'Patchouli Knowledge', correct: false },
-    { text: 'Patchouli Knowledge', correct: false },
+    { text: 'Eirin Yagokoro', correct: false   },
+    { text: 'Yorigami Shion', correct: false },
+    { text: 'Kawashiro Nitori', correct: false },
     { text: 'Patchouli Knowledge', correct: true }
   ]
 },
 {
   question: '4',
   answers: [
-    { text: 'Sakuya', correct: true   },
-    { text: '5000', correct: false },
-    { text: '44', correct: false },
-    { text: '69', correct: false }
+    { text: 'Hata no Kokoro', correct: false   },
+    { text: 'Alice Margatroid', correct: true },
+    { text: 'Houraisan Kaguya', correct: false },
+    { text: 'Kawashiro Nitori', correct: false }
   ]
 },
 {
