@@ -26,11 +26,7 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   changeImage()
   setNextQuestion()
-}) 
-
-
-
-
+})
 
 
 function startGame() {
@@ -40,20 +36,6 @@ shuffledQuestions = questions.sort(() => +1 )
 currentQuestionIndex = 0
 questionContainerElement.classList.remove('hide')
 setNextQuestion()
-}
-
-window.onkeydown = function(event){
-  if(event.keyCode === 32) {
-      event.preventDefault();
-      document.querySelector('button').setNextQuestion(); //This will trigger a click on the first <a> element.
-  }
-};
-
-
-
-function setNextQuestion() {
-  resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
@@ -69,6 +51,17 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
+
+function setNextQuestion() {
+  resetState()
+  showQuestion(shuffledQuestions[currentQuestionIndex])
+} if (currentQuestionIndex + 1) {
+  nextButton.classList.remove('hide')
+} else {
+startButton.innerText = 'Restart'
+startButton.classList.remove('hide')
+}
+
 
 function resetState() {
   clearStatusClass(document.body)
@@ -397,14 +390,5 @@ answers: [
 { text: 'Komeiji Satori', correct: false },
 { text: 'Kochiya Sanae', correct: false },
 { text: 'Komeiji Koishi', correct: false }
-]
-},
-{
-question: '33',
-answers: [
-{ text: 'Fujiwara no Mokou', correct: false   },
-{ text: 'Kirisame Marisa', correct: true },
-{ text: 'Shameimaru Aya', correct: false },
-{ text: 'Hata no Kokoro', correct: false }
 ]
 }]
