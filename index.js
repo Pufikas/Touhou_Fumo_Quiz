@@ -132,7 +132,7 @@ const questions = [
 {
   question: '3',
   answers: [
-    { text: 'Eirin Yagokoro', correct: false   },
+    { text: 'Saigyouji Yuyuko', correct: false   },
     { text: 'Yorigami Shion', correct: false },
     { text: 'Kawashiro Nitori', correct: false },
     { text: 'Patchouli Knowledge', correct: true }
@@ -151,260 +151,260 @@ const questions = [
 question: '5',
 answers: [
   { text: 'Flandre Scarlet', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Rumia', correct: false },
+  { text: 'Kochiya Sanae', correct: false },
+  { text: 'Remilia Scarlet', correct: false }
 ]
 },
 {
 question: '6',
 answers: [
-  { text: '4', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Hata no Kokoro', correct: false   },
+  { text: 'Kazami Yuuka', correct: false },
+  { text: 'Kochiya Sanae', correct: true },
+  { text: 'Kawashiro Nitori', correct: false }
 ]
 },
 {
   question: '7',
   answers: [
-    { text: 'Sakuya', correct: true   },
-    { text: '5000', correct: false },
-    { text: '44', correct: false },
-    { text: '69', correct: false }
+    { text: 'Cirno', correct: true   },
+    { text: 'Not Cirno', correct: false },
+    { text: 'Fairy', correct: true },
+    { text: 'The Strongest', correct: true }
   ]
 },
 {
 question: '8',
 answers: [
-  { text: 'Joe Biden', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Moriya Suwako', correct: true   },
+  { text: 'Inubashiri Momiji', correct: false },
+  { text: 'Joon Yorigami', correct: false },
+  { text: 'Alice Margatroid', correct: false }
 ]
 },
 {
 question: '9',
 answers: [
-  { text: '4', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Eirin Yagokoro', correct: false   },
+  { text: 'Konpaku Youmu', correct: true },
+  { text: 'Hong Meiling', correct: false },
+  { text: 'Yorigami Shion', correct: false }
 ]
 },
 {
   question: '10',
   answers: [
-    { text: 'Sakuya', correct: true   },
-    { text: '5000', correct: false },
-    { text: '44', correct: false },
-    { text: '69', correct: false }
+    { text: 'Patchouli Knowledge', correct: false   },
+    { text: 'Hata no Kokoro', correct: false },
+    { text: 'Houraisan Kaguya', correct: false },
+    { text: 'Saigyouji Yuyuko', correct: true }
   ]
 },
 {
 question: '11',
 answers: [
-  { text: 'Joe Biden', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Chen', correct: true   },
+  { text: 'Inaba Tewi', correct: false },
+  { text: 'Rumia', correct: false },
+  { text: 'Cirno', correct: false }
 ]
 },
 {
 question: '12',
 answers: [
-  { text: '4', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Fujiwara no Mokou', correct: false   },
+  { text: 'Yakumo Ran', correct: true },
+  { text: 'Alice Margatroid', correct: false },
+  { text: 'Yakumo Yukari', correct: false }
 ]
 },
 {
   question: '13',
 answers: [
-  { text: 'Sakuya', correct: true   },
-  { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Yakumo Ran', correct: false   },
+  { text: 'Yakumo Yukari', correct: true },
+  { text: 'Eirin Yagokoro', correct: false },
+  { text: 'Himekaidou Hatate', correct: false }
 ]
 },
 {
 question: '14',
 answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Yorigami Shion', correct: false   },
+{ text: 'Konpaku Youmu', correct: false },
+{ text: 'Kawashiro Nitori', correct: false },
+{ text: 'Houraisan Kaguya', correct: true }
 ]
 },
 {
 question: '15',
 answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Himekaidou Hatate', correct: false   },
+{ text: 'Chen', correct: false },
+{ text: 'Fujiwara no Mokou', correct: true },
+{ text: 'Kawashiro Nitori', correct: false }
 ]
 },
 {
   question: '16',
 answers: [
-  { text: 'Sakuya', correct: true   },
-  { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Kazami Yuuka', correct: false   },
+  { text: 'Yorigami Shion', correct: false },
+  { text: 'Komeiji Satori', correct: true },
+  { text: 'Moriya Suwako', correct: false }
 ]
 },
 {
 question: '17',
 answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Komeiji Satori', correct: false   },
+{ text: 'Kochiya Sanae', correct: false },
+{ text: 'Hong Meiling', correct: false },
+{ text: 'Komeiji Koishi', correct: true }
 ]
 },
 {
 question: '18',
 answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Hata no Kokoro', correct: false   },
+{ text: 'Reisen Udongein Inaba', correct: true },
+{ text: 'Kazami Yuuka', correct: false },
+{ text: 'Houraisan Kaguya', correct: false }
 ]
 },
 {
   question: '19',
   answers: [
-    { text: 'Sakuya', correct: true   },
-    { text: '5000', correct: false },
-    { text: '44', correct: false },
-    { text: '69', correct: false }
+    { text: 'Inaba Tewi', correct: true   },
+    { text: 'Rumia', correct: false },
+    { text: 'Remilia Scarlet', correct: false },
+    { text: 'Himekaidou Hatate', correct: false }
   ]
 },
 {
 question: '20',
 answers: [
-  { text: 'Joe Biden', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Konpaku Youmu', correct: false   },
+  { text: 'Hata no Kokoro', correct: true },
+  { text: 'Fujiwara no Mokou', correct: false },
+  { text: 'Hinanawi Tenshi', correct: false }
 ]
 },
 {
 question: '21',
 answers: [
-  { text: '4', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Fujiwara no Mokou', correct: false   },
+  { text: 'Shiki Eiki, Yamaxanadu', correct: false },
+  { text: 'Kawashiro Nitori', correct: false },
+  { text: 'Ibaraki Kasen', correct: true }
 ]
 },
 {
   question: '22',
 answers: [
-  { text: 'Sakuya', correct: true   },
-  { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Yorigami Shion', correct: false   },
+  { text: 'Shameimaru Aya', correct: true },
+  { text: 'Fujiwara no Mokou', correct: false },
+  { text: 'Yakumo Ran', correct: false }
 ]
 },
 {
 question: '23',
 answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Himekaidou Hatate', correct: true   },
+{ text: 'Hakurei Reimu', correct: false },
+{ text: 'Hata no Kokoro', correct: false },
+{ text: 'Cirno', correct: false }
 ]
 },
 {
 question: '24',
 answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Yakumo Yukari', correct: false   },
+{ text: 'Yakumo Ran', correct: false },
+{ text: 'Ibaraki Kasen', correct: false },
+{ text: 'Hinanawi Tenshi', correct: true }
 ]
 },
 {
   question: '25',
 answers: [
-  { text: 'Sakuya', correct: true   },
+  { text: 'Yorigami Shion', correct: true   },
   { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Himekaidou Hatate', correct: false },
+  { text: 'Izayoi Sakuya', correct: false }
 ]
 },
 {
 question: '26',
 answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Himekaidou Hatate', correct: false   },
+{ text: 'Kazami Yuuka', correct: true },
+{ text: 'Eirin Yagokoro', correct: false },
+{ text: 'Houraisan Kaguya', correct: false }
 ]
 },
 {
 question: '27',
 answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Komeiji Koishi', correct: false   },
+{ text: 'Inubashiri Momiji', correct: true },
+{ text: 'Konpaku Youmu', correct: false },
+{ text: 'Komeiji Satori', correct: false }
 ]
 },
 {
   question: '28',
   answers: [
-    { text: 'Sakuya', correct: true   },
-    { text: '5000', correct: false },
-    { text: '44', correct: false },
-    { text: '69', correct: false }
+    { text: 'Hinanawi Tenshi', correct: false   },
+    { text: 'Ibaraki Kasen', correct: false },
+    { text: 'Eirin Yagokoro', correct: true },
+    { text: 'Shameimaru Aya', correct: false }
   ]
 },
 {
 question: '29',
 answers: [
-  { text: 'Joe Biden', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Yakumo Ran', correct: false   },
+  { text: 'Rumia', correct: true },
+  { text: 'Hakurei Reimu', correct: false },
+  { text: 'Chen', correct: false }
 ]
 },
 {
 question: '30',
 answers: [
-  { text: '4', correct: true   },
-  { text: '22', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Ibaraki Kasen', correct: false   },
+  { text: 'Yakumo Yukari', correct: false },
+  { text: 'Joon Yorigami', correct: false },
+  { text: 'Shiki Eiki, Yamaxanadu', correct: true }
 ]
 },
 {
   question: '31',
 answers: [
-  { text: 'Sakuya', correct: true   },
-  { text: '5000', correct: false },
-  { text: '44', correct: false },
-  { text: '69', correct: false }
+  { text: 'Kawashiro Nitori', correct: true   },
+  { text: 'Kirisame Marisa', correct: false },
+  { text: 'Kochiya Sanae', correct: false },
+  { text: 'Hong Meiling', correct: false }
 ]
 },
 {
 question: '32',
 answers: [
-{ text: 'Joe Biden', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Hakurei Reimu', correct: true   },
+{ text: 'Komeiji Satori', correct: false },
+{ text: 'Kochiya Sanae', correct: false },
+{ text: 'Komeiji Koishi', correct: false }
 ]
 },
 {
 question: '33',
 answers: [
-{ text: '4', correct: true   },
-{ text: '22', correct: false },
-{ text: '44', correct: false },
-{ text: '69', correct: false }
+{ text: 'Fujiwara no Mokou', correct: false   },
+{ text: 'Kirisame Marisa', correct: true },
+{ text: 'Shameimaru Aya', correct: false },
+{ text: 'Hata no Kokoro', correct: false }
 ]
 }]
