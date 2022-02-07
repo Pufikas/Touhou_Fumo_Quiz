@@ -1,12 +1,32 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex, currentImageIndex
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-
 let images = ['Fumos/1 (1).jpg', 'Fumos/1 (2).jpg', 'Fumos/1 (3).jpg','Fumos/1 (4).jpg','Fumos/1 (5).jpg','Fumos/1 (6).jpg','Fumos/1 (7).jpg','Fumos/1 (8).jpg','Fumos/1 (9).jpg','Fumos/1 (10).jpg','Fumos/1 (11).jpg','Fumos/1 (12).jpg','Fumos/1 (13).jpg','Fumos/1 (14).jpg','Fumos/1 (15).jpg','Fumos/1 (16).jpg','Fumos/1 (18).jpg','Fumos/1 (19).jpg','Fumos/1 (20).jpg','Fumos/1 (21).jpg','Fumos/1 (22).jpg','Fumos/1 (23).jpg','Fumos/1 (24).jpg','Fumos/1 (25).jpg','Fumos/1 (26).jpg','Fumos/1 (27).jpg','Fumos/1 (28).jpg','Fumos/1 (29).jpg','Fumos/1 (30).jpg','Fumos/1 (31).jpg','Fumos/1 (32).jpg','Fumos/1 (33).jpg','Fumos/1 (34).jpg',]
 let index = 0
+
+function startGame() {
+  console.log('Started')
+  startButton.classList.add('hide')
+  shuffledQuestions = questions.sort(() => +1 )
+  currentQuestionIndex = 0
+  currentImageIndex = 0
+  questionContainerElement.classList.remove('hide')
+  setNextQuestion()
+  }
+
+  function setNextQuestion() {
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+  } if (currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+  } else {
+  startButton.innerText = 'Restart'
+  startButton.classList.remove('hide')
+  }
+
 
 function buildImage() {
   let img = document.createElement('img')
@@ -24,19 +44,10 @@ function changeImage() {
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
+  currentImageIndex++
   changeImage()
   setNextQuestion()
 })
-
-
-function startGame() {
-console.log('Started')
-startButton.classList.add('hide')
-shuffledQuestions = questions.sort(() => +1 )
-currentQuestionIndex = 0
-questionContainerElement.classList.remove('hide')
-setNextQuestion()
-}
 
 function showQuestion(question) {
   questionElement.innerText = question.question
@@ -51,17 +62,6 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
-
-function setNextQuestion() {
-  resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
-} if (currentQuestionIndex + 1) {
-  nextButton.classList.remove('hide')
-} else {
-startButton.innerText = 'Restart'
-startButton.classList.remove('hide')
-}
-
 
 function resetState() {
   clearStatusClass(document.body)
@@ -395,9 +395,9 @@ answers: [
 {
 question: '33',
 answers: [
-{ text: 'Hakurei Reimu', correct: true   },
-{ text: 'Komeiji Satori', correct: false },
-{ text: 'Kochiya Sanae', correct: false },
-{ text: 'Komeiji Koishi', correct: false }
+{ text: 'Kirisame Marisa', correct: true   },
+{ text: 'Yorigami Shion', correct: false },
+{ text: 'Flandre Scarlet', correct: false },
+{ text: 'Konpaku Youmu', correct: false }
 ]
 }]
