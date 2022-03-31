@@ -3,9 +3,11 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 let shuffledQuestions, currentQuestionIndex, currentImageIndex
 const questionElement = document.getElementById('question')
+let pointsElement = document.getElementById('pointCounter')
 const answerButtonsElement = document.getElementById('answer-buttons')
 let images = ['Fumos/1 (1).jpg', 'Fumos/1 (2).jpg', 'Fumos/1 (3).jpg','Fumos/1 (4).jpg','Fumos/1 (5).jpg','Fumos/1 (6).jpg','Fumos/1 (7).jpg','Fumos/1 (8).jpg','Fumos/1 (9).jpg','Fumos/1 (10).jpg','Fumos/1 (11).jpg','Fumos/1 (12).jpg','Fumos/1 (13).jpg','Fumos/1 (14).jpg','Fumos/1 (15).jpg','Fumos/1 (16).jpg','Fumos/1 (18).jpg','Fumos/1 (19).jpg','Fumos/1 (20).jpg','Fumos/1 (21).jpg','Fumos/1 (22).jpg','Fumos/1 (23).jpg','Fumos/1 (24).jpg','Fumos/1 (25).jpg','Fumos/1 (26).jpg','Fumos/1 (27).jpg','Fumos/1 (28).jpg','Fumos/1 (29).jpg','Fumos/1 (30).jpg','Fumos/1 (31).jpg','Fumos/1 (32).jpg','Fumos/1 (33).jpg','Fumos/1 (34).jpg',]
 let index = 0
+let points = 0
 
 function startGame() {
   console.log('Started')
@@ -23,7 +25,7 @@ function startGame() {
   } if (currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-  startButton.innerText = 'Restart'
+  nextButton.innerText = 'Next'
   startButton.classList.remove('hide')
   }
 
@@ -74,7 +76,7 @@ function resetState() {
 
 function selectAnswer(e) {
   const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
+  let correct = selectedButton.dataset.correct
   setStatusClass(document.body, correct)
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
@@ -84,8 +86,8 @@ function selectAnswer(e) {
 } else {
   startButton.innerText = 'Restart'
   startButton.classList.remove('hide')
+} 
 }
-  } 
 
 function setStatusClass(element, correct) {
   clearStatusClass(element)
