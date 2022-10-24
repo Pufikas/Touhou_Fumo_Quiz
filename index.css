@@ -38,7 +38,18 @@ body.wrong {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px 2px;
+  position: relative;
 }
+
+.scores-container {
+  position: absolute;
+  top: 8%;
+  left: 16px;
+  font-size: 18px;
+  background-color: white;
+}
+
+
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);

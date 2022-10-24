@@ -63,9 +63,6 @@ function showQuestion(question) {
     button.classList.add('btn')
     if (answer.correct) {
       button.dataset.correct = answer.correct
-      // score++
-      // scoreCounter.innerText = 'Score ' + score
-      // console.log(score)
     }
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
@@ -100,7 +97,6 @@ function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
-    // scorePlus()
   } else {
     element.classList.add('wrong')
   }
@@ -125,7 +121,7 @@ const questions = [
   {
     question: '1',
     answers: [
-      { text: 'Izayoi Sakuya', correct: true   },
+      { text: 'Izayoi Sakuya', correct: true, scorePlus(){} },
       { text: 'Cirno', correct: false },
       { text: 'Fujiwara no Mokou', correct: false },
       { text: 'Moriya Suwako', correct: false }
